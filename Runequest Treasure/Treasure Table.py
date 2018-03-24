@@ -85,14 +85,14 @@ def getSpells():
             elif randAtt == 2:
                 spellDescription = "Constitution Increasing Scroll"
             elif randAtt == 3:
-                spellDescription = "Dextarity Increasing Scroll"
+                spellDescription = "Dexterity Increasing Scroll"
             else:
                 spellDescription = "Charisma Increasing Scroll"
         elif randomRoll2 >= 16 and randomRoll2 <= 30:
-            spellDescription = "Letter of credit, deed, vauluable historical knowledge"
+            spellDescription = "Letter of credit, deed, valuable historical knowledge"
         elif randomRoll2 >= 31 and randomRoll2 <= 50:
             techniqueRaise = 5 * randint(1,4)
-            spellDescription = "Secret technique scroll raising weapong skill " + str(techniqueRaise) + " max 75%"
+            spellDescription = "Secret technique scroll raising weapon skill " + str(techniqueRaise) + " max 75%"
         elif randomRoll2 >= 51 and randomRoll2 <= 65:
             randTech = randint(1,6)
             randPerc = 5 * randint(1,4)
@@ -165,7 +165,7 @@ def getMagicCrystals():
         #9-11 creates a powerstoring crystal of 1d8 doubled
         elif randomRoll2 >= 9 and randomRoll2 <= 11:
             powerStoring = 2 * randint(1, 8)
-            magicDescription = "Powerstoring Crystal " + str(powerStoring)
+            magicDescription = "Power storing Crystal " + str(powerStoring)
         #12-14 creates a power enchancing crystal of strength 1d8
         elif randomRoll2 >= 12 and randomRoll2 <= 14:
             powerEnhancing = randint(1, 8)
@@ -177,11 +177,11 @@ def getMagicCrystals():
         #17-18 creates a spell strengthening crystal of strength 1d4
         elif randomRoll2 >= 17 and randomRoll2 <= 18:
             spellStrength = randint(1,4)
-            magicDescription = "Spell strengthening " + str(spellStrength)
+            magicDescription = "Spell strengthening Crystal " + str(spellStrength)
         #19-20 creates a spell resisting crystal of 1d4 strength
         elif randomRoll2 >= 19 and randomRoll2 <= 20:
             spellResisting = randint(1,4)
-            magicDescription = "Spell resisting " + str(spellResisting)
+            magicDescription = "Spell resisting Crystal " + str(spellResisting)
         #21-22 creates a spirit supporting crystal of 1d4 strength
         elif randomRoll2 >= 21 and randomRoll2 <= 22:
             spiritSupporting = randint(1,4)
@@ -198,7 +198,7 @@ def getMagicCrystals():
             powerStoring = 3
             powerStoring += randint(1,6)
             powerStoring += randint(1,6)
-            magicDescription = "Powerstoring Crystal " + str(powerStoring)
+            magicDescription = "Power storing Crystal " + str(powerStoring)
 
         return  magicDescription + "\n"
 
@@ -232,7 +232,7 @@ def getGems():
     #11-15 creates a gem worth 1d6 * 1000
     elif randomRoll >= 11 and randomRoll <= 15:
         gemValue = randint(1,6) * 1000
-        gemDescription = "Excelent Jewelry " + str(gemValue)
+        gemDescription = "Excellent Jewelry " + str(gemValue)
     #16-20 creates a gem worth 3d6 * 100
     elif randomRoll >= 16 and randomRoll <= 20:
         gemValue = ((randint(1,6) + randint(1,6) + randint(1,6)) * 100)
